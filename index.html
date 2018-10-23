@@ -18,7 +18,6 @@
 		var a = document.createElement("img");
 		a.style.left = randomBH(0,window.innerWidth) + "px";
 		a.style.top = randomBH(30, (window.innerHeight - 200)) + "px";
-		a.style.animationDuration = aduration + "s";
 		a.src = "nut" + randomBH(1,3) + ".png";
 		a.addEventListener("animationend", function(e){ 
 			e.target.parentNode.removeChild(e.target);
