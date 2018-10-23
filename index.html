@@ -4,22 +4,16 @@
 	<title>space</title>
 	<style type="text/css">
 		body{ perspective:300px; cursor:none; background: black}
-		img{display: block; position: absolute; width:200px; animation: r linear forwards;}
-		@keyframes r { 
-			to{ transform: translate3d(0,0,500px)}
-			from{ transform: translate3d(0,0,-3000px)} 
-		}
+		img{display: block; position: absolute; width:200px; animation: r 1s linear forwards;}
+		@keyframes r { to{ transform: translate3d(0,0,500px)}
+			from{ transform: translate3d(0,0,-3000px)} }
 	</style>
 </head>
 <body>
 </body>
 	<script>
-		document.body.style.height = window.innerHeight + "px";
-
-	var aduration = 1;
-
+	document.body.style.height = window.innerHeight + "px";
 	setInterval(star,50);
-
 	function star(){
 		var a = document.createElement("img");
 		a.style.left = randomBH(0,window.innerWidth) + "px";
